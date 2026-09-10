@@ -1,0 +1,52 @@
+{
+  "model_version": "video_auc_v2",
+  "official_checkpoint": "dual_best.pth",
+  "official_checkpoint_decision": "keep_current",
+  "official_checkpoint_sha256": "2499bc2020eea1f7a7f0ca448312d64c4771f81f6e834944e682c4498df8dd42",
+  "score_definition": "mean of per-frame sigmoid probabilities",
+  "prediction_threshold": 0.5,
+  "calibrated": false,
+  "live_inference_protocol": {
+    "candidate_frames": 30,
+    "maximum_model_frames": 20,
+    "minimum_usable_frames": 5,
+    "candidate_sampling": "uniform over complete video",
+    "model_frame_selection": "uniform over successful ordered face crops",
+    "models_scored": [
+      "spatial",
+      "frequency_only",
+      "dual"
+    ],
+    "decision_model": "dual"
+  },
+  "benchmarks": {
+    "ffpp_source_disjoint_test": {
+      "spatial_video_auc": 0.9884,
+      "dual_video_auc": 0.9901,
+      "dual_accuracy": 0.9634,
+      "dual_f1": 0.9769,
+      "coverage": 1.0
+    },
+    "celeb_df_official_test_evaluable_subset": {
+      "dual_video_auc": 0.8362,
+      "coverage": 0.9691,
+      "evaluable_videos": 502,
+      "expected_videos": 518
+    },
+    "strict_frequency_residual_disabled": {
+      "video_auc": 0.9663
+    },
+    "frequency_only_baseline": {
+      "video_auc": 0.6439
+    }
+  },
+  "limitations": [
+    "Frames are analysed independently; temporal consistency is not modelled.",
+    "Only the highest-confidence detected face is retained per sampled frame.",
+    "Demographic fairness has not been established.",
+    "Grad-CAM shows model sensitivity, not manipulation localisation.",
+    "Scores are not calibrated probabilities or forensic proof."
+  ],
+  "frequency_only_checkpoint": "frequency_only_best.pth",
+  "frequency_only_checkpoint_sha256": "7ef2965b7853bfa19ab5bfbea521be0f6f4bd5e35c57b7d7f65476ebe0e61dd4"
+}
