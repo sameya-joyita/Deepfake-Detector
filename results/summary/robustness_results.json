@@ -1,0 +1,776 @@
+{
+  "signature": "7aa2154c3b2dbf27fdac810eb4108f841616626eb88de2ed5b10731bbf7b6198",
+  "config": {
+    "version": "robustness_v2",
+    "seed": 789,
+    "conditions": [
+      "clean",
+      "jpeg_quality30",
+      "jpeg_quality60",
+      "blur_radius1",
+      "blur_radius2",
+      "brightness_low",
+      "brightness_high",
+      "contrast_low",
+      "contrast_high",
+      "noise_sigma10"
+    ],
+    "maximum_frames_per_video": 20,
+    "manifest_sha256": "21002cbca7e66cca808b350b5383b58cd6b582c985b598009bc1495e5113209e",
+    "spatial_checkpoint_sha256": "57e2292d750fb31aab2a17003d38ea5cce5d2c080acb6b3683702ede2c418cd9",
+    "dual_checkpoint_sha256": "2499bc2020eea1f7a7f0ca448312d64c4771f81f6e834944e682c4498df8dd42"
+  },
+  "note": "Corruption families overlap with training augmentation; this is a controlled fixed-severity evaluation.",
+  "conditions": {
+    "clean": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9884088999389943,
+          "acc": 0.9336043360433605,
+          "balanced_acc": 0.9508788286888359,
+          "prec": 0.9945255474452555,
+          "rec": 0.922165820642978,
+          "specificity": 0.9795918367346939,
+          "f1": 0.9569798068481123,
+          "fpr": 0.02040816326530612,
+          "fnr": 0.077834179357022,
+          "eer": 0.03986670810456164,
+          "threshold": 0.5,
+          "cm": [
+            [
+              144,
+              3
+            ],
+            [
+              46,
+              545
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 88.90505082655555,
+          "median_scoring_pipeline_ms": 89.44988450002711
+        },
+        "auc_drop_from_clean": 0.0,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9901124578426972,
+          "acc": 0.9634146341463414,
+          "balanced_acc": 0.9567146655616562,
+          "prec": 0.9862068965517241,
+          "rec": 0.9678510998307953,
+          "specificity": 0.9455782312925171,
+          "f1": 0.9769427839453458,
+          "fpr": 0.05442176870748299,
+          "fnr": 0.032148900169204735,
+          "eer": 0.03561932387168064,
+          "threshold": 0.5,
+          "cm": [
+            [
+              139,
+              8
+            ],
+            [
+              19,
+              572
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 106.47019428997329,
+          "median_scoring_pipeline_ms": 106.74262600002749
+        },
+        "auc_drop_from_clean": 0.0,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0017035579037029125
+    },
+    "jpeg_quality30": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9481105470953185,
+          "acc": 0.7398373983739838,
+          "balanced_acc": 0.8324527780655409,
+          "prec": 0.9950372208436724,
+          "rec": 0.6785109983079526,
+          "specificity": 0.9863945578231292,
+          "f1": 0.806841046277666,
+          "fpr": 0.013605442176870748,
+          "fnr": 0.32148900169204736,
+          "eer": 0.11704478745813046,
+          "threshold": 0.5,
+          "cm": [
+            [
+              145,
+              2
+            ],
+            [
+              190,
+              401
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 100.84827466395349,
+          "median_scoring_pipeline_ms": 101.68473650014676
+        },
+        "auc_drop_from_clean": 0.04029835284367578,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9491004523636866,
+          "acc": 0.8333333333333334,
+          "balanced_acc": 0.8780517283055354,
+          "prec": 0.9854771784232366,
+          "rec": 0.8037225042301185,
+          "specificity": 0.9523809523809523,
+          "f1": 0.8853681267474371,
+          "fpr": 0.047619047619047616,
+          "fnr": 0.19627749576988154,
+          "eer": 0.122984219068338,
+          "threshold": 0.5,
+          "cm": [
+            [
+              140,
+              7
+            ],
+            [
+              116,
+              475
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 116.89772402167063,
+          "median_scoring_pipeline_ms": 118.3810955003537
+        },
+        "auc_drop_from_clean": 0.04101200547901063,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0009899052683680631
+    },
+    "jpeg_quality60": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9748494998676289,
+          "acc": 0.8915989159891599,
+          "balanced_acc": 0.9195414206291653,
+          "prec": 0.9904030710172744,
+          "rec": 0.8730964467005076,
+          "specificity": 0.9659863945578231,
+          "f1": 0.9280575539568345,
+          "fpr": 0.034013605442176874,
+          "fnr": 0.12690355329949238,
+          "eer": 0.07123864774336133,
+          "threshold": 0.5,
+          "cm": [
+            [
+              142,
+              5
+            ],
+            [
+              75,
+              516
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 102.95159291057506,
+          "median_scoring_pipeline_ms": 104.0795399999297
+        },
+        "auc_drop_from_clean": 0.013559400071365357,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9770019683000104,
+          "acc": 0.926829268292683,
+          "balanced_acc": 0.9262060154010843,
+          "prec": 0.9803220035778175,
+          "rec": 0.9272419627749577,
+          "specificity": 0.9251700680272109,
+          "f1": 0.9530434782608695,
+          "fpr": 0.07482993197278912,
+          "fnr": 0.0727580372250423,
+          "eer": 0.07464000828757901,
+          "threshold": 0.5,
+          "cm": [
+            [
+              136,
+              11
+            ],
+            [
+              43,
+              548
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 118.8858368672069,
+          "median_scoring_pipeline_ms": 120.17732150002303
+        },
+        "auc_drop_from_clean": 0.013110489542686787,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0021524684323814824
+    },
+    "blur_radius1": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9733646419650771,
+          "acc": 0.8685636856368564,
+          "balanced_acc": 0.9051590179218896,
+          "prec": 0.9900793650793651,
+          "rec": 0.8443316412859561,
+          "specificity": 0.9659863945578231,
+          "f1": 0.9114155251141552,
+          "fpr": 0.034013605442176874,
+          "fnr": 0.155668358714044,
+          "eer": 0.08227148727511308,
+          "threshold": 0.5,
+          "cm": [
+            [
+              142,
+              5
+            ],
+            [
+              92,
+              499
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 127.16685397425454,
+          "median_scoring_pipeline_ms": 128.628306499877
+        },
+        "auc_drop_from_clean": 0.015044257973917174,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9779688525156255,
+          "acc": 0.9322493224932249,
+          "balanced_acc": 0.9347007838668462,
+          "prec": 0.9838998211091234,
+          "rec": 0.9306260575296108,
+          "specificity": 0.9387755102040817,
+          "f1": 0.9565217391304348,
+          "fpr": 0.061224489795918366,
+          "fnr": 0.06937394247038917,
+          "eer": 0.07210193722158915,
+          "threshold": 0.5,
+          "cm": [
+            [
+              138,
+              9
+            ],
+            [
+              41,
+              550
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 141.77647329538337,
+          "median_scoring_pipeline_ms": 143.03453650018128
+        },
+        "auc_drop_from_clean": 0.012143605327071705,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.004604210550548382
+    },
+    "blur_radius2": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.8961635415587555,
+          "acc": 0.7967479674796748,
+          "balanced_acc": 0.8117683621672019,
+          "prec": 0.950920245398773,
+          "rec": 0.7868020304568528,
+          "specificity": 0.8367346938775511,
+          "f1": 0.8611111111111112,
+          "fpr": 0.16326530612244897,
+          "fnr": 0.2131979695431472,
+          "eer": 0.18999274836838287,
+          "threshold": 0.5,
+          "cm": [
+            [
+              123,
+              24
+            ],
+            [
+              126,
+              465
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 129.20903621273476,
+          "median_scoring_pipeline_ms": 130.55704650014377
+        },
+        "auc_drop_from_clean": 0.09224535838023873,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9066266100348769,
+          "acc": 0.8590785907859079,
+          "balanced_acc": 0.7919127041679617,
+          "prec": 0.919104991394148,
+          "rec": 0.9035532994923858,
+          "specificity": 0.6802721088435374,
+          "f1": 0.9112627986348123,
+          "fpr": 0.3197278911564626,
+          "fnr": 0.09644670050761421,
+          "eer": 0.1823612693808488,
+          "threshold": 0.5,
+          "cm": [
+            [
+              100,
+              47
+            ],
+            [
+              57,
+              534
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 142.33363181301377,
+          "median_scoring_pipeline_ms": 143.78319600018585
+        },
+        "auc_drop_from_clean": 0.08348584780782031,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.010463068476121329
+    },
+    "brightness_low": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9873844630914972,
+          "acc": 0.9295392953929539,
+          "balanced_acc": 0.9457854207672917,
+          "prec": 0.9926873857404022,
+          "rec": 0.9187817258883249,
+          "specificity": 0.9727891156462585,
+          "f1": 0.9543057996485061,
+          "fpr": 0.027210884353741496,
+          "fnr": 0.08121827411167512,
+          "eer": 0.04749818709209572,
+          "threshold": 0.5,
+          "cm": [
+            [
+              143,
+              4
+            ],
+            [
+              48,
+              543
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 96.11406583062514,
+          "median_scoring_pipeline_ms": 97.12871199985784
+        },
+        "auc_drop_from_clean": 0.00102443684749709,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9888693209940491,
+          "acc": 0.9566395663956639,
+          "balanced_acc": 0.947373873407231,
+          "prec": 0.9827288428324698,
+          "rec": 0.9627749576988156,
+          "specificity": 0.9319727891156463,
+          "f1": 0.9726495726495726,
+          "fpr": 0.06802721088435375,
+          "fnr": 0.03722504230118443,
+          "eer": 0.051745571324976675,
+          "threshold": 0.5,
+          "cm": [
+            [
+              137,
+              10
+            ],
+            [
+              22,
+              569
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 112.3180438265575,
+          "median_scoring_pipeline_ms": 113.48700500002451
+        },
+        "auc_drop_from_clean": 0.0012431368486480743,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0014848579025519282
+    },
+    "brightness_high": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9862564315066128,
+          "acc": 0.9186991869918699,
+          "balanced_acc": 0.9415725681135398,
+          "prec": 0.994413407821229,
+          "rec": 0.9035532994923858,
+          "specificity": 0.9795918367346939,
+          "f1": 0.9468085106382979,
+          "fpr": 0.02040816326530612,
+          "fnr": 0.09644670050761421,
+          "eer": 0.06276114506716393,
+          "threshold": 0.5,
+          "cm": [
+            [
+              144,
+              3
+            ],
+            [
+              57,
+              534
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 99.89242739836145,
+          "median_scoring_pipeline_ms": 100.81204749985773
+        },
+        "auc_drop_from_clean": 0.0021524684323814824,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.987752799935541,
+          "acc": 0.9552845528455285,
+          "balanced_acc": 0.9516385234296765,
+          "prec": 0.9860627177700348,
+          "rec": 0.9576988155668359,
+          "specificity": 0.9455782312925171,
+          "f1": 0.9716738197424892,
+          "fpr": 0.05442176870748299,
+          "fnr": 0.04230118443316413,
+          "eer": 0.04749818709209572,
+          "threshold": 0.5,
+          "cm": [
+            [
+              139,
+              8
+            ],
+            [
+              25,
+              566
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 114.71583791192182,
+          "median_scoring_pipeline_ms": 115.99426450015926
+        },
+        "auc_drop_from_clean": 0.0023596579071561985,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0014963684289281964
+    },
+    "contrast_low": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9863485157176237,
+          "acc": 0.926829268292683,
+          "balanced_acc": 0.9440933733899651,
+          "prec": 0.9926605504587156,
+          "rec": 0.9153976311336718,
+          "specificity": 0.9727891156462585,
+          "f1": 0.9524647887323944,
+          "fpr": 0.027210884353741496,
+          "fnr": 0.08460236886632826,
+          "eer": 0.05343761870230326,
+          "threshold": 0.5,
+          "cm": [
+            [
+              143,
+              4
+            ],
+            [
+              50,
+              541
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 100.49604801490825,
+          "median_scoring_pipeline_ms": 101.58855450004012
+        },
+        "auc_drop_from_clean": 0.002060384221370559,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9877873315146701,
+          "acc": 0.9552845528455285,
+          "balanced_acc": 0.9414171760074588,
+          "prec": 0.979381443298969,
+          "rec": 0.9644670050761421,
+          "specificity": 0.9183673469387755,
+          "f1": 0.9718670076726342,
+          "fpr": 0.08163265306122448,
+          "fnr": 0.03553299492385787,
+          "eer": 0.0551296660796298,
+          "threshold": 0.5,
+          "cm": [
+            [
+              135,
+              12
+            ],
+            [
+              21,
+              570
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 116.5099514878026,
+          "median_scoring_pipeline_ms": 117.62976749992049
+        },
+        "auc_drop_from_clean": 0.0023251263280270607,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.001438815797046411
+    },
+    "contrast_high": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.9868434683518077,
+          "acc": 0.9308943089430894,
+          "balanced_acc": 0.9466314444559549,
+          "prec": 0.9927007299270073,
+          "rec": 0.9204737732656514,
+          "specificity": 0.9727891156462585,
+          "f1": 0.9552238805970149,
+          "fpr": 0.027210884353741496,
+          "fnr": 0.07952622673434856,
+          "eer": 0.04580613971476913,
+          "threshold": 0.5,
+          "cm": [
+            [
+              143,
+              4
+            ],
+            [
+              47,
+              544
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 103.64898567073386,
+          "median_scoring_pipeline_ms": 104.83046599983936
+        },
+        "auc_drop_from_clean": 0.0015654315871865832,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.9885930683610161,
+          "acc": 0.9579945799457995,
+          "balanced_acc": 0.9584412445181119,
+          "prec": 0.9895104895104895,
+          "rec": 0.9576988155668359,
+          "specificity": 0.9591836734693877,
+          "f1": 0.9733447979363714,
+          "fpr": 0.04081632653061224,
+          "fnr": 0.04230118443316413,
+          "eer": 0.03986670810456164,
+          "threshold": 0.5,
+          "cm": [
+            [
+              141,
+              6
+            ],
+            [
+              25,
+              566
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 119.58079189837444,
+          "median_scoring_pipeline_ms": 120.81390650018875
+        },
+        "auc_drop_from_clean": 0.001519389481681066,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0017496000092084296
+    },
+    "noise_sigma10": {
+      "spatial": {
+        "metrics": {
+          "auc": 0.89637073103353,
+          "acc": 0.8360433604336044,
+          "balanced_acc": 0.8235263648606651,
+          "prec": 0.9450757575757576,
+          "rec": 0.8443316412859561,
+          "specificity": 0.8027210884353742,
+          "f1": 0.8918677390527256,
+          "fpr": 0.19727891156462585,
+          "fnr": 0.155668358714044,
+          "eer": 0.19168479574570946,
+          "threshold": 0.5,
+          "cm": [
+            [
+              118,
+              29
+            ],
+            [
+              92,
+              499
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 200.30515721275898,
+          "median_scoring_pipeline_ms": 202.0453519999137
+        },
+        "auc_drop_from_clean": 0.09203816890546423,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual": {
+        "metrics": {
+          "auc": 0.8979822047262221,
+          "acc": 0.8468834688346883,
+          "balanced_acc": 0.8047411858144273,
+          "prec": 0.9298561151079137,
+          "rec": 0.8747884940778342,
+          "specificity": 0.7346938775510204,
+          "f1": 0.9014821272885789,
+          "fpr": 0.2653061224489796,
+          "fnr": 0.12521150592216582,
+          "eer": 0.1891467246797196,
+          "threshold": 0.5,
+          "cm": [
+            [
+              108,
+              39
+            ],
+            [
+              74,
+              517
+            ]
+          ],
+          "n_videos": 738,
+          "mean_scoring_pipeline_ms": 209.6224838604087,
+          "median_scoring_pipeline_ms": 211.5648910003074
+        },
+        "auc_drop_from_clean": 0.09213025311647505,
+        "coverage": {
+          "expected_videos": 738,
+          "evaluated_videos": 738,
+          "missing_videos": 0,
+          "coverage": 1.0,
+          "missing_video_ids": []
+        }
+      },
+      "dual_minus_spatial_auc": 0.0016114736926921003
+    }
+  }
+}

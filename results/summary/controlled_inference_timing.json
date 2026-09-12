@@ -1,0 +1,88 @@
+{
+  "gpu": "Tesla T4",
+  "torch_version": "2.10.0+cu128",
+  "cuda_version": "12.8",
+  "input_shape": [
+    3,
+    224,
+    224
+  ],
+  "timed_region": "model forward pass only",
+  "warmup_iterations": 30,
+  "timed_repetitions": 100,
+  "results": [
+    {
+      "model": "spatial",
+      "batch_size": 1,
+      "warmup_iterations": 30,
+      "timed_repetitions": 100,
+      "mean_batch_ms": 15.189358081817627,
+      "median_batch_ms": 14.82908821105957,
+      "std_batch_ms": 1.0433663804382203,
+      "mean_per_image_ms": 15.189358081817627,
+      "throughput_images_per_second": 65.83556688923193
+    },
+    {
+      "model": "dual",
+      "batch_size": 1,
+      "warmup_iterations": 30,
+      "timed_repetitions": 100,
+      "mean_batch_ms": 16.411147804260253,
+      "median_batch_ms": 16.336671829223633,
+      "std_batch_ms": 0.6196344902170288,
+      "mean_per_image_ms": 16.411147804260253,
+      "throughput_images_per_second": 60.93419009610071
+    },
+    {
+      "model": "frequency_only",
+      "batch_size": 1,
+      "warmup_iterations": 30,
+      "timed_repetitions": 100,
+      "mean_batch_ms": 1.2289628839492799,
+      "median_batch_ms": 1.2083520293235779,
+      "std_batch_ms": 0.07124931630367598,
+      "mean_per_image_ms": 1.2289628839492799,
+      "throughput_images_per_second": 813.6942238536071
+    },
+    {
+      "model": "spatial",
+      "batch_size": 20,
+      "warmup_iterations": 30,
+      "timed_repetitions": 100,
+      "mean_batch_ms": 64.1372262954712,
+      "median_batch_ms": 64.09113693237305,
+      "std_batch_ms": 0.4845492089707437,
+      "mean_per_image_ms": 3.2068613147735596,
+      "throughput_images_per_second": 311.8313833507986
+    },
+    {
+      "model": "dual",
+      "batch_size": 20,
+      "warmup_iterations": 30,
+      "timed_repetitions": 100,
+      "mean_batch_ms": 69.53318405151367,
+      "median_batch_ms": 69.4809455871582,
+      "std_batch_ms": 0.40381754760533634,
+      "mean_per_image_ms": 3.4766592025756835,
+      "throughput_images_per_second": 287.6324487770184
+    },
+    {
+      "model": "frequency_only",
+      "batch_size": 20,
+      "warmup_iterations": 30,
+      "timed_repetitions": 100,
+      "mean_batch_ms": 4.957933754920959,
+      "median_batch_ms": 4.953423976898193,
+      "std_batch_ms": 0.03687250638391719,
+      "mean_per_image_ms": 0.24789668774604795,
+      "throughput_images_per_second": 4033.9385293619853
+    }
+  ],
+  "pipeline_reference": {
+    "spatial_mean_ms_per_video": 88.90505082655555,
+    "spatial_median_ms_per_video": 89.44988450002711,
+    "dual_mean_ms_per_video": 106.47019428997329,
+    "dual_median_ms_per_video": 106.74262600002749,
+    "pipeline_note": "Includes crop loading, preprocessing, device transfer, forward passes and video aggregation."
+  }
+}

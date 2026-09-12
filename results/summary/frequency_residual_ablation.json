@@ -1,0 +1,109 @@
+{
+  "ablation": "alpha * projected frequency residual set to zero",
+  "retraining": false,
+  "maximum_frames_per_video": 20,
+  "coverage": {
+    "expected_videos": 738,
+    "evaluated_videos": 738,
+    "missing_videos": 0,
+    "coverage": 1.0,
+    "missing_video_ids": []
+  },
+  "frequency_disabled_metrics": {
+    "auc": 0.9663201998227379,
+    "acc": 0.2005420054200542,
+    "balanced_acc": 0.5008460236886633,
+    "prec": 1.0,
+    "rec": 0.001692047377326565,
+    "specificity": 1.0,
+    "f1": 0.0033783783783783786,
+    "fpr": 0.0,
+    "fnr": 0.9983079526226735,
+    "eer": 0.08821091888532062,
+    "threshold": 0.5,
+    "cm": [
+      [
+        147,
+        0
+      ],
+      [
+        590,
+        1
+      ]
+    ],
+    "n_videos": 738,
+    "mean_scoring_pipeline_ms": 104.54999093631122,
+    "median_scoring_pipeline_ms": 103.05376549990797
+  },
+  "official_dual_metrics": {
+    "auc": 0.9901124578426972,
+    "acc": 0.9634146341463414,
+    "balanced_acc": 0.9567146655616562,
+    "prec": 0.9862068965517241,
+    "rec": 0.9678510998307953,
+    "specificity": 0.9455782312925171,
+    "f1": 0.9769427839453458,
+    "fpr": 0.05442176870748299,
+    "fnr": 0.032148900169204735,
+    "eer": 0.03561932387168064,
+    "threshold": 0.5,
+    "cm": [
+      [
+        139,
+        8
+      ],
+      [
+        19,
+        572
+      ]
+    ],
+    "n_videos": 738,
+    "mean_scoring_pipeline_ms": 106.47019428997329,
+    "median_scoring_pipeline_ms": 106.74262600002749
+  },
+  "auc_difference_official_minus_disabled": 0.023792258019959323,
+  "paired_cluster_bootstrap": {
+    "resampling_unit": "FF++ source-pair component",
+    "n_components": 75,
+    "n_videos": 738,
+    "n_bootstrap_requested": 5000,
+    "n_bootstrap_valid": 5000,
+    "seed": 84,
+    "first_model": "frequency residual disabled",
+    "second_model": "official dual",
+    "first_auc": 0.9663201998227379,
+    "second_auc": 0.9901124578426972,
+    "auc_difference_second_minus_first": 0.023792258019959323,
+    "first_auc_ci95": [
+      0.951427642648035,
+      0.9801604360000427
+    ],
+    "second_auc_ci95": [
+      0.984043532555497,
+      0.9951231596191266
+    ],
+    "auc_difference_ci95": [
+      0.01192783136425076,
+      0.03653617569476763
+    ],
+    "first_f1_ci95": [
+      0.0,
+      0.010238907849829351
+    ],
+    "second_f1_ci95": [
+      0.9672977624784854,
+      0.9856540084388186
+    ],
+    "first_eer_ci95": [
+      0.05999915540540543,
+      0.11252889540963187
+    ],
+    "second_eer_ci95": [
+      0.022444158075601385,
+      0.05465293713005639
+    ],
+    "fraction_resamples_second_higher": 1.0,
+    "fraction_note": "Descriptive bootstrap proportion; not a formal p-value.",
+    "interpretation": "The 95% cluster-bootstrap interval favours official dual over frequency residual disabled."
+  }
+}

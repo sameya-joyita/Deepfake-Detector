@@ -1,0 +1,191 @@
+{
+  "search_signature": "cd14386256bb0b2ca9a933541d8d83335708bbf323ae5a5cc1c677781759f122",
+  "selection_split": "validation",
+  "selection_unit": "video",
+  "video_aggregation": "mean_frame_probability",
+  "test_set_used_for_selection": false,
+  "full_training_budget": 8,
+  "candidate_config": {
+    "lr": 0.0001,
+    "dropout": 0.4
+  },
+  "candidate_selected_epoch": 5,
+  "candidate_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.11703467955748552,
+      "train_acc": 0.9541250297406614,
+      "frame_val_loss": 0.2962107322226136,
+      "frame_val_acc": 0.9180790960451978,
+      "frame_val_auc": 0.9657827930958512,
+      "video_auc": 0.9820289855072463,
+      "video_log_loss": 0.1544048822342906,
+      "video_balanced_acc": 0.9357185990338164,
+      "avg_alpha": 0.15071970224380493,
+      "lr_after_epoch": 9.623203685930869e-05,
+      "epoch_seconds": 560.3410904407501
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.10906398715240853,
+      "train_acc": 0.957916964073281,
+      "frame_val_loss": 0.2780199025868107,
+      "frame_val_acc": 0.9213983050847457,
+      "frame_val_auc": 0.9676832534426334,
+      "video_auc": 0.9822342995169081,
+      "video_log_loss": 0.14935462392082274,
+      "video_balanced_acc": 0.94006038647343,
+      "avg_alpha": 0.12298370897769928,
+      "lr_after_epoch": 8.55017856687341e-05,
+      "epoch_seconds": 545.2658739089966
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.1050013464007127,
+      "train_acc": 0.9592850344991672,
+      "frame_val_loss": 0.31000913039565425,
+      "frame_val_acc": 0.919774011299435,
+      "frame_val_auc": 0.9678446377494109,
+      "video_auc": 0.9817149758454107,
+      "video_log_loss": 0.15221603272355586,
+      "video_balanced_acc": 0.9348550724637681,
+      "avg_alpha": 0.1077103465795517,
+      "lr_after_epoch": 6.944282990207195e-05,
+      "epoch_seconds": 559.1427838802338
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.1049433246127731,
+      "train_acc": 0.9595973114442066,
+      "frame_val_loss": 0.291613703231343,
+      "frame_val_acc": 0.9187146892655367,
+      "frame_val_auc": 0.9679050201642895,
+      "video_auc": 0.9828743961352657,
+      "video_log_loss": 0.15770754648889646,
+      "video_balanced_acc": 0.9469987922705314,
+      "avg_alpha": 0.13100984692573547,
+      "lr_after_epoch": 5.05e-05,
+      "epoch_seconds": 548.7454302310944
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.10546978721769613,
+      "train_acc": 0.9590024982155603,
+      "frame_val_loss": 0.28000537559500566,
+      "frame_val_acc": 0.9196327683615819,
+      "frame_val_auc": 0.9678090644612665,
+      "video_auc": 0.9824275362318841,
+      "video_log_loss": 0.14931768630128878,
+      "video_balanced_acc": 0.9322463768115942,
+      "avg_alpha": 0.11209899187088013,
+      "lr_after_epoch": 3.1557170097928055e-05,
+      "epoch_seconds": 552.7137765884399
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.10107199060716233,
+      "train_acc": 0.9596716630977873,
+      "frame_val_loss": 0.28965295063223856,
+      "frame_val_acc": 0.9188559322033898,
+      "frame_val_auc": 0.9678875537891708,
+      "video_auc": 0.9824637681159418,
+      "video_log_loss": 0.1500924650661921,
+      "video_balanced_acc": 0.9331159420289855,
+      "avg_alpha": 0.11136090010404587,
+      "lr_after_epoch": 1.54982143312659e-05,
+      "epoch_seconds": 547.1721150875092
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.10177803201728985,
+      "train_acc": 0.9594932191291934,
+      "frame_val_loss": 0.2987388496384509,
+      "frame_val_acc": 0.9186440677966101,
+      "frame_val_auc": 0.9680626862266322,
+      "video_auc": 0.9823309178743961,
+      "video_log_loss": 0.1537043483413855,
+      "video_balanced_acc": 0.9435326086956521,
+      "avg_alpha": 0.11231625825166702,
+      "lr_after_epoch": 4.767963140691306e-06,
+      "epoch_seconds": 530.8249864578247
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.10116781347349034,
+      "train_acc": 0.9599541993813943,
+      "frame_val_loss": 0.31149691862440904,
+      "frame_val_acc": 0.9192090395480226,
+      "frame_val_auc": 0.9679586066282049,
+      "video_auc": 0.9819685990338164,
+      "video_log_loss": 0.15365603517438495,
+      "video_balanced_acc": 0.9331159420289855,
+      "avg_alpha": 0.11138569563627243,
+      "lr_after_epoch": 1e-06,
+      "epoch_seconds": 534.2299880981445
+    }
+  ],
+  "current_checkpoint": "/kaggle/working/checkpoints/dual_best.pth",
+  "current_saved_epoch": 1,
+  "current_validation_video_metrics": {
+    "auc": 0.9832729468599033,
+    "acc": 0.9443671766342142,
+    "balanced_acc": 0.9365881642512077,
+    "prec": 0.9802513464991023,
+    "rec": 0.9495652173913044,
+    "specificity": 0.9236111111111112,
+    "f1": 0.9646643109540636,
+    "fpr": 0.0763888888888889,
+    "fnr": 0.050434782608695654,
+    "eer": 0.0556038647342995,
+    "threshold": 0.5,
+    "cm": [
+      [
+        133,
+        11
+      ],
+      [
+        29,
+        546
+      ]
+    ],
+    "n_videos": 719,
+    "mean_scoring_pipeline_ms": 112.22227741166792,
+    "median_scoring_pipeline_ms": 113.25228099940432
+  },
+  "current_validation_video_log_loss": 0.1441163118939339,
+  "tuned_checkpoint": "/kaggle/working/checkpoints/dual_tuned_best.pth",
+  "tuned_saved_epoch": 5,
+  "tuned_validation_video_metrics": {
+    "auc": 0.9824275362318841,
+    "acc": 0.9415855354659249,
+    "balanced_acc": 0.9322463768115942,
+    "prec": 0.9784560143626571,
+    "rec": 0.9478260869565217,
+    "specificity": 0.9166666666666666,
+    "f1": 0.9628975265017667,
+    "fpr": 0.08333333333333333,
+    "fnr": 0.05217391304347826,
+    "eer": 0.05473429951690821,
+    "threshold": 0.5,
+    "cm": [
+      [
+        132,
+        12
+      ],
+      [
+        30,
+        545
+      ]
+    ],
+    "n_videos": 719,
+    "mean_scoring_pipeline_ms": 111.20444217801843,
+    "median_scoring_pipeline_ms": 112.19622600037837
+  },
+  "tuned_validation_video_log_loss": 0.14931768630128878,
+  "auc_difference_tuned_minus_current": -0.0008454106280192386,
+  "auc_tie_tolerance": 0.001,
+  "log_loss_tie_epsilon": 1e-06,
+  "decision_basis": "auc_within_tolerance_current_log_loss_lower_or_tied",
+  "decision": "keep_current",
+  "final_checkpoint": "/kaggle/working/checkpoints/dual_best.pth"
+}

@@ -20,6 +20,7 @@ from app.services.preprocessing import FaceExtractor
 REFERENCE_VIDEO_ID = "Deepfakes_004_982"
 REFERENCE_DUAL_SCORE = 0.935472482442856
 REFERENCE_DISABLED_SCORE = 0.0230944835580885
+REFERENCE_MODEL_FRAMES = 20
 TOLERANCE = 1e-4
 
 
@@ -61,15 +62,33 @@ def main():
     )
     args = parser.parse_args()
 
-    crop_paths = sorted(
+    all_crop_paths = sorted(
         path
         for path in args.crop_directory.glob(f"{REFERENCE_VIDEO_ID}_f*.jpg")
     )
-    if not crop_paths:
+    if not all_crop_paths:
         raise FileNotFoundError("No notebook reference crops were found.")
-    if len(crop_paths) > 20:
-        selected = np.linspace(0, len(crop_paths) - 1, 20, dtype=int)
+
+    crop_paths = all_crop_paths
+    if len(crop_paths) > REFERENCE_MODEL_FRAMES:
+        selected = np.linspace(
+            0,
+            len(crop_paths) - 1,
+            REFERENCE_MODEL_FRAMES,
+            dtype=int,
+        )
         crop_paths = [crop_paths[index] for index in selected]
+
+    if len(crop_paths) != REFERENCE_MODEL_FRAMES:
+        raise RuntimeError(
+            f"The parity reference requires {REFERENCE_MODEL_FRAMES} model "
+            f"crops, but only {len(crop_paths)} were selected from "
+            f"{len(all_crop_paths)} available files. Restore the complete "
+            f"saved crop set for {REFERENCE_VIDEO_ID}."
+        )
+
+    print(f"Reference crops available: {len(all_crop_paths)}")
+    print(f"Reference crops selected: {len(crop_paths)}")
 
     crops = []
     for path in crop_paths:

@@ -1,0 +1,12 @@
+{
+  "n_manifest_videos": 738,
+  "n_matched_videos": 738,
+  "mean_effect": 0.7546061669571278,
+  "mean_absolute_effect": 0.7546061669571278,
+  "flip_counts": {
+    "frequency_fixed_prediction": 571,
+    "no_flip": 159,
+    "frequency_broke_prediction": 8
+  },
+  "note": "A positive frequency_score_effect means the frequency residual increased the fake score. It does not establish correctness."
+}

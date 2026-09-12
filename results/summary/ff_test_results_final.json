@@ -1,0 +1,79 @@
+{
+  "spatial": {
+    "auc": 0.9884088999389943,
+    "acc": 0.9336043360433605,
+    "balanced_acc": 0.9508788286888359,
+    "prec": 0.9945255474452555,
+    "rec": 0.922165820642978,
+    "specificity": 0.9795918367346939,
+    "f1": 0.9569798068481123,
+    "fpr": 0.02040816326530612,
+    "fnr": 0.077834179357022,
+    "eer": 0.03986670810456164,
+    "threshold": 0.5,
+    "cm": [
+      [
+        144,
+        3
+      ],
+      [
+        46,
+        545
+      ]
+    ],
+    "n_videos": 738,
+    "mean_scoring_pipeline_ms": 88.90505082655555,
+    "median_scoring_pipeline_ms": 89.44988450002711
+  },
+  "dual": {
+    "auc": 0.9901124578426972,
+    "acc": 0.9634146341463414,
+    "balanced_acc": 0.9567146655616562,
+    "prec": 0.9862068965517241,
+    "rec": 0.9678510998307953,
+    "specificity": 0.9455782312925171,
+    "f1": 0.9769427839453458,
+    "fpr": 0.05442176870748299,
+    "fnr": 0.032148900169204735,
+    "eer": 0.03561932387168064,
+    "threshold": 0.5,
+    "cm": [
+      [
+        139,
+        8
+      ],
+      [
+        19,
+        572
+      ]
+    ],
+    "n_videos": 738,
+    "mean_scoring_pipeline_ms": 106.47019428997329,
+    "median_scoring_pipeline_ms": 106.74262600002749
+  },
+  "spatial_coverage": {
+    "expected_videos": 738,
+    "evaluated_videos": 738,
+    "missing_videos": 0,
+    "coverage": 1.0,
+    "missing_video_ids": []
+  },
+  "dual_coverage": {
+    "expected_videos": 738,
+    "evaluated_videos": 738,
+    "missing_videos": 0,
+    "coverage": 1.0,
+    "missing_video_ids": []
+  },
+  "final_dual_checkpoint": "/kaggle/working/checkpoints/dual_best.pth",
+  "final_dual_decision": "keep_current",
+  "protocol": {
+    "dataset": "FaceForensics++ C23",
+    "split": "source-disjoint test",
+    "unit": "video",
+    "maximum_frames_per_video": 20,
+    "aggregation": "mean frame probability",
+    "threshold": 0.5,
+    "test_used_for_model_selection": false
+  }
+}

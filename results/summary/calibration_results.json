@@ -1,0 +1,284 @@
+{
+  "temperature": 1.3321810873501034,
+  "fit_split": "FF++ validation",
+  "evaluation_split": "FF++ test",
+  "aggregation": "mean sigmoid(frame_logit / temperature)",
+  "n_bins_ece": 10,
+  "validation_raw": {
+    "auc": 0.9832729468599033,
+    "nll": 0.14411631053221363,
+    "brier": 0.04022522846536174,
+    "ece": 0.028815214274448747,
+    "n_videos": 719,
+    "reliability_points": [
+      {
+        "bin": 0,
+        "count": 94,
+        "mean_score": 0.022650784960298716,
+        "observed_fake_rate": 0.06382978723404255
+      },
+      {
+        "bin": 1,
+        "count": 21,
+        "mean_score": 0.15425522543877612,
+        "observed_fake_rate": 0.23809523809523808
+      },
+      {
+        "bin": 2,
+        "count": 23,
+        "mean_score": 0.2463774158435537,
+        "observed_fake_rate": 0.30434782608695654
+      },
+      {
+        "bin": 3,
+        "count": 12,
+        "mean_score": 0.3394114189956472,
+        "observed_fake_rate": 0.16666666666666666
+      },
+      {
+        "bin": 4,
+        "count": 12,
+        "mean_score": 0.45066903559880206,
+        "observed_fake_rate": 0.75
+      },
+      {
+        "bin": 5,
+        "count": 8,
+        "mean_score": 0.5342222677598893,
+        "observed_fake_rate": 0.5
+      },
+      {
+        "bin": 6,
+        "count": 13,
+        "mean_score": 0.6462053095537027,
+        "observed_fake_rate": 0.8461538461538461
+      },
+      {
+        "bin": 7,
+        "count": 10,
+        "mean_score": 0.7648640951068743,
+        "observed_fake_rate": 0.8
+      },
+      {
+        "bin": 8,
+        "count": 28,
+        "mean_score": 0.8609976756185482,
+        "observed_fake_rate": 0.9642857142857143
+      },
+      {
+        "bin": 9,
+        "count": 498,
+        "mean_score": 0.9920242745020929,
+        "observed_fake_rate": 0.9959839357429718
+      }
+    ]
+  },
+  "validation_calibrated": {
+    "auc": 0.9831763285024154,
+    "nll": 0.14130088976528335,
+    "brier": 0.040184341614589274,
+    "ece": 0.03101190691187506,
+    "n_videos": 719,
+    "reliability_points": [
+      {
+        "bin": 0,
+        "count": 91,
+        "mean_score": 0.02966497264279743,
+        "observed_fake_rate": 0.06593406593406594
+      },
+      {
+        "bin": 1,
+        "count": 20,
+        "mean_score": 0.15798749331940545,
+        "observed_fake_rate": 0.15
+      },
+      {
+        "bin": 2,
+        "count": 22,
+        "mean_score": 0.24524714911381035,
+        "observed_fake_rate": 0.36363636363636365
+      },
+      {
+        "bin": 3,
+        "count": 16,
+        "mean_score": 0.33516363348164846,
+        "observed_fake_rate": 0.1875
+      },
+      {
+        "bin": 4,
+        "count": 14,
+        "mean_score": 0.4578851379966148,
+        "observed_fake_rate": 0.7142857142857143
+      },
+      {
+        "bin": 5,
+        "count": 9,
+        "mean_score": 0.5522674807493119,
+        "observed_fake_rate": 0.5555555555555556
+      },
+      {
+        "bin": 6,
+        "count": 11,
+        "mean_score": 0.6491228909832916,
+        "observed_fake_rate": 0.8181818181818182
+      },
+      {
+        "bin": 7,
+        "count": 11,
+        "mean_score": 0.7585639045500101,
+        "observed_fake_rate": 0.7272727272727273
+      },
+      {
+        "bin": 8,
+        "count": 32,
+        "mean_score": 0.8589742534813585,
+        "observed_fake_rate": 0.96875
+      },
+      {
+        "bin": 9,
+        "count": 493,
+        "mean_score": 0.9887743061269614,
+        "observed_fake_rate": 0.9979716024340771
+      }
+    ]
+  },
+  "test_raw": {
+    "auc": 0.9901124578426972,
+    "nll": 0.11952197335484237,
+    "brier": 0.03163176071076778,
+    "ece": 0.029036046399666275,
+    "n_videos": 738,
+    "reliability_points": [
+      {
+        "bin": 0,
+        "count": 91,
+        "mean_score": 0.024256621819767607,
+        "observed_fake_rate": 0.03296703296703297
+      },
+      {
+        "bin": 1,
+        "count": 30,
+        "mean_score": 0.14699752698956686,
+        "observed_fake_rate": 0.16666666666666666
+      },
+      {
+        "bin": 2,
+        "count": 10,
+        "mean_score": 0.23175335765618446,
+        "observed_fake_rate": 0.3
+      },
+      {
+        "bin": 3,
+        "count": 14,
+        "mean_score": 0.35348077850013004,
+        "observed_fake_rate": 0.21428571428571427
+      },
+      {
+        "bin": 4,
+        "count": 13,
+        "mean_score": 0.4481525660460252,
+        "observed_fake_rate": 0.38461538461538464
+      },
+      {
+        "bin": 5,
+        "count": 8,
+        "mean_score": 0.5519207002111743,
+        "observed_fake_rate": 0.625
+      },
+      {
+        "bin": 6,
+        "count": 20,
+        "mean_score": 0.6591948351834878,
+        "observed_fake_rate": 0.85
+      },
+      {
+        "bin": 7,
+        "count": 18,
+        "mean_score": 0.7384667376983364,
+        "observed_fake_rate": 0.9444444444444444
+      },
+      {
+        "bin": 8,
+        "count": 35,
+        "mean_score": 0.860396109986297,
+        "observed_fake_rate": 0.9714285714285714
+      },
+      {
+        "bin": 9,
+        "count": 499,
+        "mean_score": 0.9907931314816616,
+        "observed_fake_rate": 1.0
+      }
+    ]
+  },
+  "test_calibrated": {
+    "auc": 0.9901124578426972,
+    "nll": 0.12062048467378647,
+    "brier": 0.03205270334186805,
+    "ece": 0.031187828351398286,
+    "n_videos": 738,
+    "reliability_points": [
+      {
+        "bin": 0,
+        "count": 85,
+        "mean_score": 0.029647966000580225,
+        "observed_fake_rate": 0.023529411764705882
+      },
+      {
+        "bin": 1,
+        "count": 32,
+        "mean_score": 0.1478850944997328,
+        "observed_fake_rate": 0.15625
+      },
+      {
+        "bin": 2,
+        "count": 14,
+        "mean_score": 0.23582580477284365,
+        "observed_fake_rate": 0.2857142857142857
+      },
+      {
+        "bin": 3,
+        "count": 13,
+        "mean_score": 0.36332719670613517,
+        "observed_fake_rate": 0.23076923076923078
+      },
+      {
+        "bin": 4,
+        "count": 13,
+        "mean_score": 0.4508411056069487,
+        "observed_fake_rate": 0.38461538461538464
+      },
+      {
+        "bin": 5,
+        "count": 9,
+        "mean_score": 0.5493337989980058,
+        "observed_fake_rate": 0.5555555555555556
+      },
+      {
+        "bin": 6,
+        "count": 20,
+        "mean_score": 0.6553855166644094,
+        "observed_fake_rate": 0.85
+      },
+      {
+        "bin": 7,
+        "count": 18,
+        "mean_score": 0.7314584338695427,
+        "observed_fake_rate": 0.9444444444444444
+      },
+      {
+        "bin": 8,
+        "count": 44,
+        "mean_score": 0.856170685021311,
+        "observed_fake_rate": 0.9772727272727273
+      },
+      {
+        "bin": 9,
+        "count": 490,
+        "mean_score": 0.9880903815328909,
+        "observed_fake_rate": 1.0
+      }
+    ]
+  },
+  "note": "Video AUC is reported before and after calibration because applying temperature to frame logits before aggregation can change video ranking."
+}

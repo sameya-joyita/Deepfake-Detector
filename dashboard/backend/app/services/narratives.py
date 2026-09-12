@@ -78,5 +78,6 @@ def narrate_gradcam(available):
     return (
         "The Grad-CAM heatmap visualises sensitivity within the spatial "
         "pathway of the dual model for the predicted class. It does not "
-        "localise or prove manipulation in the highlighted pixels."
+        "prove manipulation or localise a verified artefact in the "
+        "highlighted pixels."
     )

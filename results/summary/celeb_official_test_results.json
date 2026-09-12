@@ -1,0 +1,114 @@
+{
+  "protocol": "Celeb-DF v2 List_of_testing_videos.txt",
+  "training_on_celeb_df": false,
+  "maximum_frames_per_video": 20,
+  "spatial": {
+    "auc": 0.8305010893246187,
+    "acc": 0.7171314741035857,
+    "balanced_acc": 0.7330065359477125,
+    "prec": 0.8666666666666667,
+    "rec": 0.6882352941176471,
+    "specificity": 0.7777777777777778,
+    "f1": 0.7672131147540984,
+    "fpr": 0.2222222222222222,
+    "fnr": 0.31176470588235294,
+    "eer": 0.26653957879448076,
+    "threshold": 0.5,
+    "cm": [
+      [
+        126,
+        36
+      ],
+      [
+        106,
+        234
+      ]
+    ],
+    "n_videos": 502,
+    "mean_scoring_pipeline_ms": 85.28134661552697,
+    "median_scoring_pipeline_ms": 90.30403349970584
+  },
+  "dual": {
+    "auc": 0.8362018881626725,
+    "acc": 0.7709163346613546,
+    "balanced_acc": 0.7420116194625999,
+    "prec": 0.835820895522388,
+    "rec": 0.8235294117647058,
+    "specificity": 0.6604938271604939,
+    "f1": 0.8296296296296296,
+    "fpr": 0.3395061728395062,
+    "fnr": 0.17647058823529413,
+    "eer": 0.2515432098765432,
+    "threshold": 0.5,
+    "cm": [
+      [
+        107,
+        55
+      ],
+      [
+        60,
+        280
+      ]
+    ],
+    "n_videos": 502,
+    "mean_scoring_pipeline_ms": 99.4546147669435,
+    "median_scoring_pipeline_ms": 105.49565949986572
+  },
+  "spatial_coverage": {
+    "expected_videos": 518,
+    "evaluated_videos": 502,
+    "missing_videos": 16,
+    "coverage": 0.9691119691119691,
+    "missing_video_ids": [
+      "Celeb-real_id13_0013",
+      "Celeb-real_id19_0005",
+      "Celeb-real_id58_0002",
+      "YouTube-real_00277",
+      "YouTube-real_00278",
+      "YouTube-real_00279",
+      "YouTube-real_00280",
+      "YouTube-real_00281",
+      "YouTube-real_00282",
+      "YouTube-real_00283",
+      "YouTube-real_00284",
+      "YouTube-real_00285",
+      "YouTube-real_00286",
+      "YouTube-real_00287",
+      "YouTube-real_00288",
+      "YouTube-real_00289"
+    ]
+  },
+  "dual_coverage": {
+    "expected_videos": 518,
+    "evaluated_videos": 502,
+    "missing_videos": 16,
+    "coverage": 0.9691119691119691,
+    "missing_video_ids": [
+      "Celeb-real_id13_0013",
+      "Celeb-real_id19_0005",
+      "Celeb-real_id58_0002",
+      "YouTube-real_00277",
+      "YouTube-real_00278",
+      "YouTube-real_00279",
+      "YouTube-real_00280",
+      "YouTube-real_00281",
+      "YouTube-real_00282",
+      "YouTube-real_00283",
+      "YouTube-real_00284",
+      "YouTube-real_00285",
+      "YouTube-real_00286",
+      "YouTube-real_00287",
+      "YouTube-real_00288",
+      "YouTube-real_00289"
+    ]
+  },
+  "face_crop_coverage": {
+    "evaluated_videos": 502,
+    "total_selected_crops": 9340,
+    "mean_selected_crops_per_video": 18.605577689243027,
+    "minimum_selected_crops_per_video": 1,
+    "maximum_selected_crops_per_video": 20
+  },
+  "dual_minus_spatial_auc": 0.005700798838053744,
+  "full_collection_dual_auc": 0.8786007458017369
+}

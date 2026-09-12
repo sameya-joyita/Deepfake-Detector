@@ -1,0 +1,44 @@
+{
+  "resampling_unit": "FF++ source-pair component",
+  "n_components": 75,
+  "n_videos": 738,
+  "n_bootstrap_requested": 5000,
+  "n_bootstrap_valid": 5000,
+  "seed": 42,
+  "first_model": "spatial",
+  "second_model": "dual",
+  "first_auc": 0.9884088999389943,
+  "second_auc": 0.9901124578426972,
+  "auc_difference_second_minus_first": 0.0017035579037029125,
+  "first_auc_ci95": [
+    0.9821967021664791,
+    0.9938260299622838
+  ],
+  "second_auc_ci95": [
+    0.9842477421763787,
+    0.9950832322443577
+  ],
+  "auc_difference_ci95": [
+    0.0004906138021712581,
+    0.0031353556003538494
+  ],
+  "first_f1_ci95": [
+    0.9424455652484213,
+    0.9702276707530648
+  ],
+  "second_f1_ci95": [
+    0.9675213675213675,
+    0.9856297548605241
+  ],
+  "first_eer_ci95": [
+    0.026196974746081896,
+    0.061069524004972266
+  ],
+  "second_eer_ci95": [
+    0.02256787025043179,
+    0.05428364239096653
+  ],
+  "fraction_resamples_second_higher": 0.9968,
+  "fraction_note": "Descriptive bootstrap proportion; not a formal p-value.",
+  "interpretation": "The 95% cluster-bootstrap interval favours dual over spatial."
+}

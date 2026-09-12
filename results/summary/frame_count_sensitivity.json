@@ -1,0 +1,127 @@
+{
+  "experiment_type": "post-selection frame-count sensitivity analysis",
+  "official_protocol_maximum_frames": 20,
+  "model_selection_performed": false,
+  "results": {
+    "10": {
+      "requested_maximum_frames": 10,
+      "actual_mean_frames": 9.978319783197833,
+      "actual_median_frames": 10.0,
+      "actual_minimum_frames": 6,
+      "actual_maximum_frames": 10,
+      "coverage": {
+        "expected_videos": 738,
+        "evaluated_videos": 738,
+        "missing_videos": 0,
+        "coverage": 1.0,
+        "missing_video_ids": []
+      },
+      "metrics": {
+        "auc": 0.9891570841534583,
+        "acc": 0.9579945799457995,
+        "balanced_acc": 0.9482198970958942,
+        "prec": 0.9827586206896551,
+        "rec": 0.9644670050761421,
+        "specificity": 0.9319727891156463,
+        "f1": 0.9735269000853971,
+        "fpr": 0.06802721088435375,
+        "fnr": 0.03553299492385787,
+        "eer": 0.04496011602610586,
+        "threshold": 0.5,
+        "cm": [
+          [
+            137,
+            10
+          ],
+          [
+            21,
+            570
+          ]
+        ],
+        "n_videos": 738,
+        "mean_scoring_pipeline_ms": 53.495478195126445,
+        "median_scoring_pipeline_ms": 53.364445000170235
+      }
+    },
+    "20": {
+      "requested_maximum_frames": 20,
+      "actual_mean_frames": 19.70731707317073,
+      "actual_median_frames": 20.0,
+      "actual_minimum_frames": 6,
+      "actual_maximum_frames": 20,
+      "coverage": {
+        "expected_videos": 738,
+        "evaluated_videos": 738,
+        "missing_videos": 0,
+        "coverage": 1.0,
+        "missing_video_ids": []
+      },
+      "metrics": {
+        "auc": 0.9901124578426972,
+        "acc": 0.9634146341463414,
+        "balanced_acc": 0.9567146655616562,
+        "prec": 0.9862068965517241,
+        "rec": 0.9678510998307953,
+        "specificity": 0.9455782312925171,
+        "f1": 0.9769427839453458,
+        "fpr": 0.05442176870748299,
+        "fnr": 0.032148900169204735,
+        "eer": 0.03561932387168064,
+        "threshold": 0.5,
+        "cm": [
+          [
+            139,
+            8
+          ],
+          [
+            19,
+            572
+          ]
+        ],
+        "n_videos": 738,
+        "mean_scoring_pipeline_ms": 106.47019428997329,
+        "median_scoring_pipeline_ms": 106.74262600002749
+      }
+    },
+    "30": {
+      "requested_maximum_frames": 30,
+      "actual_mean_frames": 28.74932249322493,
+      "actual_median_frames": 30.0,
+      "actual_minimum_frames": 6,
+      "actual_maximum_frames": 30,
+      "coverage": {
+        "expected_videos": 738,
+        "evaluated_videos": 738,
+        "missing_videos": 0,
+        "coverage": 1.0,
+        "missing_video_ids": []
+      },
+      "metrics": {
+        "auc": 0.9899052683679224,
+        "acc": 0.959349593495935,
+        "balanced_acc": 0.9490659207845575,
+        "prec": 0.9827882960413081,
+        "rec": 0.9661590524534687,
+        "specificity": 0.9319727891156463,
+        "f1": 0.9744027303754266,
+        "fpr": 0.06802721088435375,
+        "fnr": 0.0338409475465313,
+        "eer": 0.040712731793224904,
+        "threshold": 0.5,
+        "cm": [
+          [
+            137,
+            10
+          ],
+          [
+            20,
+            571
+          ]
+        ],
+        "n_videos": 738,
+        "mean_scoring_pipeline_ms": 160.24260567479266,
+        "median_scoring_pipeline_ms": 165.5140290001782
+      }
+    }
+  }
+}

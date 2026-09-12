@@ -1,0 +1,44 @@
+{
+  "experiment_type": "separately trained frequency-only baseline",
+  "hyperparameters_separately_tuned": false,
+  "settings_basis": "fixed to retained dual-model training configuration",
+  "checkpoint": "/kaggle/working/checkpoints/frequency_only_best.pth",
+  "selected_epoch": 8,
+  "validation_video_auc": 0.6243236714975846,
+  "validation_video_log_loss": 0.705820496281718,
+  "test_coverage": {
+    "expected_videos": 738,
+    "evaluated_videos": 738,
+    "missing_videos": 0,
+    "coverage": 1.0,
+    "missing_video_ids": []
+  },
+  "test_metrics": {
+    "auc": 0.6439448875997099,
+    "acc": 0.5677506775067751,
+    "balanced_acc": 0.6100176111053559,
+    "prec": 0.8715846994535519,
+    "rec": 0.5397631133671743,
+    "specificity": 0.6802721088435374,
+    "f1": 0.6666666666666666,
+    "fpr": 0.3197278911564626,
+    "fnr": 0.4602368866328257,
+    "eer": 0.3935564073345074,
+    "threshold": 0.5,
+    "cm": [
+      [
+        100,
+        47
+      ],
+      [
+        272,
+        319
+      ]
+    ],
+    "n_videos": 738,
+    "mean_scoring_pipeline_ms": 51.79163859487704,
+    "median_scoring_pipeline_ms": 51.79571600001509
+  },
+  "spatial_test_video_auc": 0.9884088999389943,
+  "dual_test_video_auc": 0.9901124578426972
+}
